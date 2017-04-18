@@ -64,7 +64,7 @@
 
     <!-- 配置调度程序quartz ，其中配置JobDetail有两种方式-->
     <!--方式一：使用JobDetailBean，任务类必须实现Job接口 -->
-    <!--
+
     <bean id="myjob" class="org.springframework.scheduling.quartz.JobDetailBean">
         <property name="name" value="exampleJob"></property>
         <property name="jobClass" value="com.util.quartz"></property>
@@ -74,7 +74,7 @@
         </map>
         </property>
     </bean>
-    -->
+
     <!--运行时请将方式一注释掉！ -->
     <!-- 方式二：使用MethodInvokingJobDetailFactoryBean，任务类可以不实现Job接口，通过targetMethod指定调用方法-->
     <!-- 定义目标bean和bean中的方法 -->
